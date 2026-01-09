@@ -1,0 +1,7 @@
+# macOS
+.DS_Store
+
+# IDEs / editors
+.vscode/
+*.sublime-project
+*.sublime-workspace
