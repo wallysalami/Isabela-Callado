@@ -285,6 +285,8 @@ img{ max-width:100%; display:block; }
 /* Sections */
 .section{
   padding: clamp(2.2rem, 5vw, 3.4rem) 0;
+  scroll-margin-top: 35px; /* compensa altura do topbar ao clicar nos links de navegação */
+  scroll-behavior: smooth;
 }
 .section--alt{
   background: rgba(255,255,255,.28);
