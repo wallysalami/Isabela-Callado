@@ -1,18 +1,23 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Isabela Callado • Dança & Consciência Corporal</title>
-  <meta name="description" content="Aulas, oficinas, apresentações e atendimento corporal terapêutico com Isabela Callado." />
+  <meta name="description"
+    content="Aulas, oficinas, apresentações e atendimento corporal terapêutico com Isabela Callado." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
 
-  <!-- Swiper (gallery carousel) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Splide (carousel library) -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
   <!-- GLightbox (image/video lightbox) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
@@ -50,12 +55,8 @@
       <div class="hero__bg" aria-hidden="true"></div>
 
       <div class="container hero__grid">
-        <img
-              class="circle-hero-image"
-              src="assets/isabela-hero-circle.jpg"
-              alt="Isabela dançando, sorrindo, com vestido em tons de verde."
-              loading="eager"
-        />
+        <img class="circle-hero-image" src="assets/isabela-hero-circle.jpg"
+          alt="Isabela dançando, sorrindo, com vestido em tons de verde." loading="eager" />
 
         <div class="hero__copy">
           <p class="hero__kicker">Bem-vinda!</p>
@@ -151,55 +152,54 @@
     </section>
 
     <!-- GALERIA -->
+
     <section id="galeria" class="section">
       <div class="container">
         <h2 class="section__title center">Galeria de Fotos & Vídeos</h2>
-        <p class="section__subtitle center">
-          Clique para ampliar. (Substitua os arquivos em <code>assets/</code> pelos reais depois.)
-        </p>
-
-        <div class="gallery">
-          <div class="swiper" id="gallerySwiper" aria-label="Carrossel de fotos e vídeos">
-            <div class="swiper-wrapper">
-              <!-- Photos -->
-              <div class="swiper-slide">
-                <a class="glightbox" href="assets/galeria-1.jpg" data-gallery="galeria" data-title="Foto 1">
-                  <img src="assets/galeria-1.jpg" alt="Foto 1 (placeholder)" loading="lazy" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a class="glightbox" href="assets/galeria-2.jpg" data-gallery="galeria" data-title="Foto 2">
-                  <img src="assets/galeria-2.jpg" alt="Foto 2 (placeholder)" loading="lazy" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a class="glightbox" href="assets/galeria-3.jpg" data-gallery="galeria" data-title="Foto 3">
-                  <img src="assets/galeria-3.jpg" alt="Foto 3 (placeholder)" loading="lazy" />
-                </a>
-              </div>
-
-              <!-- Video example: replace href with your video URL or local mp4 -->
-              <div class="swiper-slide">
-                <a class="glightbox" href="https://www.youtube.com/watch?v=ysz5S6PUM-U" data-type="video" data-gallery="galeria" data-title="Vídeo (exemplo)">
-                  <div class="video-thumb">
-                    <img src="assets/video-poster.jpg" alt="Vídeo (placeholder)" loading="lazy" />
-                    <span class="play" aria-hidden="true">▶</span>
-                  </div>
-                </a>
-              </div>
-
-              <div class="swiper-slide">
-                <a class="glightbox" href="assets/galeria-4.jpg" data-gallery="galeria" data-title="Foto 4">
-                  <img src="assets/galeria-4.jpg" alt="Foto 4 (placeholder)" loading="lazy" />
-                </a>
-              </div>
-            </div>
-
-            <div class="swiper-button-prev" aria-label="Anterior"></div>
-            <div class="swiper-button-next" aria-label="Próximo"></div>
-            <div class="swiper-pagination" aria-label="Paginação"></div>
+        <section id="main-carousel" class="splide"
+          aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="assets/apresentacao-bbs-2017.jpg" alt="Apresentação BBS 2017" loading="lazy" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/deusas-do-sol-e-da-lua.jpg" alt="Deusas do Sol e da Lua" loading="lazy" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/dia-da-mulher-2018.jpg" alt="Dia da Mulher 2018" loading="lazy" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/workshop-Derbakarioca-2018.jpg" alt="Workshop Derbakarioca 2018" loading="lazy" />
+              </li>
+               <li class="splide__slide">
+                <img src="assets/roda.jpg" alt="Roda de Alunas" loading="lazy" />
+              </li>
+            </ul>
           </div>
-        </div>
+        </section>
+        <section id="thumbnail-carousel" class="splide"
+          aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="assets/apresentacao-bbs-2017.jpg" alt="Apresentação BBS 2017" loading="lazy" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/deusas-do-sol-e-da-lua.jpg" alt="Deusas do Sol e da Lua" loading="lazy" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/dia-da-mulher-2018.jpg" alt="Dia da Mulher 2018" loading="lazy" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/workshop-Derbakarioca-2018.jpg" alt="Workshop Derbakarioca 2018" loading="lazy" />
+              </li>
+               <li class="splide__slide">
+                <img src="assets/roda.jpg" alt="Roda de Alunas" loading="lazy" />
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
     </section>
 
@@ -285,5 +285,37 @@
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
   <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var main = new Splide('#main-carousel', {
+        type: 'fade',
+        rewind: true,
+        pagination: false,
+        arrows: false,
+      });
+
+      var thumbnails = new Splide('#thumbnail-carousel', {
+        fixedWidth: 70,
+        fixedHeight: 70,
+        gap: 10,
+        rewind: true,
+        autoplay: true,
+        interval: 4000,
+        pagination: false,
+        isNavigation: true,
+        breakpoints: {
+          600: {
+            fixedWidth: 60,
+            fixedHeight: 44,
+          },
+        },
+      });
+
+      main.sync(thumbnails);
+      main.mount();
+      thumbnails.mount();
+    });
+  </script>
 </body>
+
 </html>
