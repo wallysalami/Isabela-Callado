@@ -189,14 +189,15 @@ img{ max-width:100%; display:block; }
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
   color: var(--gold);
-  font-size: 3rem;
-  margin: 0;
+  font-size: clamp(2.5rem, 4.5vw, 3.3rem);
+  margin: 0 0 1rem;
+  line-height: 1em;
 }
 .hero__title{
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
   font-size: clamp(2rem, 4vw, 2.8rem);
-  margin: 0 0 .6rem;
+  margin: 0 0 1rem;
 }
 .hero__title span{
   color: var(--teal);

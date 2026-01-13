@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // WhatsApp
   const phoneDigits = "21998308072"; // <-- ajuste aqui se mudar
-  const message = "Oi, Isabela! Vim pelo seu site e queria informações / agendar uma aula 🙂";
+  const message = "Oi, Isabela! Vim pelo seu site e queria informações / agendar uma aula.";
   const whats = $("#whatsLink");
   const phoneText = $("#phoneText");
   if (whats) whats.href = formatWhatsAppLink(phoneDigits, message);
