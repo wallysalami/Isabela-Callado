@@ -35,27 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (whats) whats.href = formatWhatsAppLink(phoneDigits, message);
   if (phoneText) phoneText.textContent = "21 99830-8072";
 
-  // Swiper gallery
-  // Docs: https://swiperjs.com/
-  const swiper = new Swiper("#gallerySwiper", {
-    slidesPerView: 1.1,
-    spaceBetween: 14,
-    centeredSlides: false,
-    grabCursor: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true
-    },
-    breakpoints: {
-      700: { slidesPerView: 2.2, spaceBetween: 16 },
-      980: { slidesPerView: 3.1, spaceBetween: 18 }
-    }
-  });
-
   // GLightbox for click-to-zoom images / video
   // Docs: https://biati-digital.github.io/glightbox/
   const lightbox = GLightbox({
